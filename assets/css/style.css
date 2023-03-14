@@ -1,0 +1,27 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+}
+
+.slider-img{
+    height: 500px;
+}
+
+#header-image{
+    height: 300px;
+    border-radius: 20px;
+}
+
+.content-card{
+    text-align: center;
+    height: 500px;
+}
+
+.card-img-top{
+    height: 250px;
+}
+
+.footer{
+       height: 80px; 
+       line-height: 80px;
+       font-size: large;
+}

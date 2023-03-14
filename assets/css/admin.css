@@ -1,0 +1,25 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#sidebar{
+    background-color: black;
+    color: white;
+    height:1000px;
+}
+
+.sidebar-list{
+    list-style-type: none;
+     
+}
+
+.sidebar-list li a{
+    color: azure;
+    text-decoration: none;
+   
+}
+
+.sidebar-list li{
+    padding : 15px;  
+    border-bottom: 2px solid white;
+}
