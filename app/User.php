@@ -13,8 +13,8 @@ class User
         try {
             $state =$this->conn->prepare("INSERT INTO users(username,email,password)VALUES(:username,:email,:password)");
             $state->bindParam(":username",$username);
-            $state->bindparam(":email",$email);
-            $state->bindparam(":password",$password);
+            $state->bindParam(":email",$email);
+            $state->bindParam(":password",$password);
             $state->execute();
             return true;
         } catch (Exception $e) {
