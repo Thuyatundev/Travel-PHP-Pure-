@@ -48,8 +48,8 @@ foreach ($posts as $post) {?>
       <td><?php echo $post['title']?></td>
       
       <td>
-        <a href="" class="text-success"><i class="fa-solid fa-user-pen"></i></a>
-        <a href="" class="text-danger" onclick="return confirm('Are You Sure?')"><i class="fa-solid fa-trash-can"></i></a>
+        <a href="admin.php?page=postEdit&id=<?php echo $post['id']?>" class="text-success"><i class="fa-solid fa-user-pen"></i></a>
+        <a href="../../controller/PostController.php?action=delete&id=<?php echo $post['id']?>" class="text-danger" onclick="return confirm('Are You Sure?')"><i class="fa-solid fa-trash-can"></i></a>
       </td>
     </tr>
 

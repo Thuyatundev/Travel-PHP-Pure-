@@ -1,7 +1,7 @@
 <!-- start Footer -->
-<div class="footer bg-danger">
+<div class="container-fluid footer bg-danger mt-3">
         <p class="text-center text-white">Design & Develope By Logic</p>
-    </div>
+</div>
 <!-- end footer -->
 
 

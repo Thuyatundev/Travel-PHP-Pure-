@@ -31,7 +31,8 @@ if (isset($_POST['username'])) {
         unset($_SESSION['password']);
 
         if ($_POST['action'] == 'add') {
-            $status = $user->create($username, $email, $password);
+            $pass = password_hash($password,PASSWORD_BCRYPT);
+            $status = $user->create($username, $email, $pass);
 
             if ($status) {
                 $_SESSION['status'] = "User Created Successfully...";
@@ -40,7 +41,8 @@ if (isset($_POST['username'])) {
             header("Location:" . $_SERVER['HTTP_REFERER']);
         } elseif ($_POST['action'] == 'update') {
             $id = $_POST['id'];
-            $status = $user->update($id,$username, $email, $password );
+            $pass = password_hash($password,PASSWORD_BCRYPT);
+            $status = $user->update($id,$username, $email, $pass );
 
             if ($status) {
                 $_SESSION['status'] = "User Updated Successfully...";

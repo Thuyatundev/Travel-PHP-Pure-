@@ -1,5 +1,5 @@
 <!-- start intro -->
-<div class="container mt-4">
+<div class="container mt-4" id="about">
         <div class="row">
             <div class="col-6">
                 <h2 class="text-center text-danger">Travel For Life</h2>
